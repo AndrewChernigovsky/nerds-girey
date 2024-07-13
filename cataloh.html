@@ -24,20 +24,18 @@
                             href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <a class="header-main__navigation-basket" href="#">Корзина</a>
+            <a class="header-main__navigation-cart" href="#">Корзина</a>
         </div>
         <h1 class="header-main__title">Магазин готовых шаблонов</h1>
     </header>
     <section class="price-catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <div class="price-catalog__menu">
-            <div class="price-catalog__option">
+            <div class="option">
                 <div class="option__money">
                     <p class="option__money-title">Стоимость</p>
                     <div class="option__money-range">
-                        <div class="option__money-range-area">
-                            <img src="./image/placeholder.svg" alt="Элемент ползунка." width="4px" height="4px">
-                            <img src="./image/placeholder.svg" alt="Элемент ползунка." width="4px" height="4px">
-                        </div>
+                        <div class="option__money-range-area"></div>
                     </div>
                 </div>
                 <form class="option__money-forms" action="" method="get">
@@ -55,7 +53,7 @@
             </div>
             <div class="price-catalog__sorting">
                 <form class="sorting__forms" action="" method="get">
-                    <div class="sorting__forms-radiobutton-block">
+                    <fieldset class="sorting__forms-radiobutton-block">
                         <p class="sorting__forms-radiobutton-title">Сетка:</p>
                         <p class="sorting__forms-radiobutton-button">
                             <input class="sorting__forms-radiobutton-button-input" type="radio" id="adaptivity"
@@ -72,8 +70,8 @@
                                 name="radiobutton" value="rubber" />
                             <label class="sorting__forms-radiobutton-button-label" for="rubber">Резинновая</label>
                         </p>
-                    </div>
-                    <div class="sorting__forms-checkbox-block">
+                    </fieldset>
+                    <fieldset class="sorting__forms-checkbox-block">
                         <p class="sorting__forms-checkbox-title">Особенности:</p>
                         <p class="sorting__forms-checkbox-button">
                             <input class="sorting__forms-checkbox-button-input" type="checkbox" id="slider"
@@ -100,7 +98,7 @@
                                 name="checkbox" value="basket" />
                             <label class="sorting__forms-checkbox-button-label" for="basket">Корзина</label>
                         </p>
-                    </div>
+                    </fieldset>
                     <button class="sorting__button" id="sorting__submit-button" type="submit">Отправить</button>
                 </form>
 
@@ -118,24 +116,15 @@
                             названию</a></li>
                 </ul>
                 <div class="cards__header-sorting">
-                    <a class="header-sorting__up-link" href="#"><img class="header-sorting__up-image"
-                            src="./image/placeholder.svg" alt="Сортировать по возрастанию." width="11px"
-                            height="10px"></a>
-                    <a class="header-sorting__down-link" href="#"><img class="header-sorting__down-image"
-                            src="./image/placeholder.svg" alt="Сортировать по убыванию." width="11px" height="10px"></a>
+                    <button type="button" class="header-sorting__up-link"><span class="visually-hidden"></span></button>
+                    <button type="button" class="header-sorting__down-link"><span
+                            class="visually-hidden"></span></button>
                 </div>
             </header>
             <ul class="price-catalog-list">
                 <li class="price-catalog-list__item">
                     <a class="price-catalog-list__item-link" href="#">
-                        <div class="price-catalog-list__item-pagination">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                        </div>
+                        <div class="price-catalog-list__item-pagination"></div>
                         <img class="price-catalog-list__item-link-image" src="./image/placeholder.svg"
                             alt="Шабло сайта." width="358px" height="578px">
                     </a>
@@ -227,18 +216,22 @@
             </ul>
         </div>
     </section>
-    <section class="location__map">
+    <section class="locations">
+        <h2 class="visually-hidden">Карта с местонахождением</h2>
         <img class="location__map-image" src="./image/placeholder.svg" alt="Карта с местонахождением офиса."
             width="1440px" height="416px">
     </section>
     <footer class="footer-main">
         <ul class="footer-main__social-list">
-            <li class="social-list_item"><a href="#" class="social-list__item-link"><img class="social-list__link-image"
-                        src="./image/placeholder.svg" alt="Vkontakte." width="26px" height="15px"></a></li>
-            <li class="social-list_item"><a href="#" class="social-list__item-link"><img class="social-list__link-image"
-                        src="./image/placeholder.svg" alt="Facebook." width="12px" height="22px"></a></li>
-            <li class="social-list_item"><a href="#" class="social-list__item-link"><img class="social-list__link-image"
-                        src="./image/placeholder.svg" alt="Instagram" width="21px" height="21px"></a></li>
+            <li class="social-list__item"><a href="#" class="social-list__item-link"><img
+                        class="social-list__link-image" src="./image/placeholder.svg" alt="Vkontakte." width="26px"
+                        height="15px"></a></li>
+            <li class="social-list__item"><a href="#" class="social-list__item-link"><img
+                        class="social-list__link-image" src="./image/placeholder.svg" alt="Facebook." width="12px"
+                        height="22px"></a></li>
+            <li class="social-list__item"><a href="#" class="social-list__item-link"><img
+                        class="social-list__link-image" src="./image/placeholder.svg" alt="Instagram" width="21px"
+                        height="21px"></a></li>
         </ul>
         <p class="footer-main_title">Давайте дружить, это выгодно!</p>
         <p class="footer-main-text">Скидка 10% для друзей из социальных сетей.</p>
