@@ -13,90 +13,88 @@
             <a class="header-main__logo-link" href="#"><img class="header-main__logo-image"
                     src="./image/placeholder.svg" alt="Логотип сайта." width="160px" height="65px"></a>
             <nav class="header-main__navigation">
-                <ul class="header-main__navigation-list">
-                    <li class="header-main__navigation-list-item"><a class="header-main__navigation-link"
-                            href="#">Студия</a></li>
-                    <li class="header-main__navigation-list-item"><a class="header-main__navigation-link"
-                            href="#">Клиенты</a></li>
-                    <li class="header-main__navigation-list-item"><a class="header-main__navigation-link"
-                            href="#">Магазин</a></li>
-                    <li class="header-main__navigation-list-item"><a class="header-main__navigation-link"
-                            href="#">Контакты</a></li>
+                <ul class="header-main__list">
+                    <li class="header-main__list-item"><a class="header-main__list-link" href="#">Студия</a></li>
+                    <li class="header-main__list-item"><a class="header-main__list-link" href="#">Клиенты</a>
+                    </li>
+                    <li class="header-main__list-item"><a class="header-main__list-link" href="#">Магазин</a>
+                    </li>
+                    <li class="header-main__list-item"><a class="header-main__list-link" href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <a class="header-main__navigation-cart" href="#">Корзина</a>
+            <a class="header-main__cart" href="#">Корзина</a>
         </div>
         <h1 class="header-main__title">Магазин готовых шаблонов</h1>
     </header>
     <section class="price-catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <div class="price-catalog__menu">
-            <div class="option">
-                <div class="option__money">
-                    <p class="option__money-title">Стоимость</p>
-                    <div class="option__money-range">
-                        <div class="option__money-range-area"></div>
+            <div class="price-catalog__option">
+                <div class="price-catalog__option-money">
+                    <p class="price-catalog__option-money-title">Стоимость</p>
+                    <div class="price-catalog__option-money-range">
+                        <div class="price-catalog__option-money-range-area"></div>
                     </div>
                 </div>
-                <form class="option__money-forms" action="" method="get">
-                    <p class="option__money-forms-block">
-                        <label class="option__money-forms-label" for="numbers-min">От</label>
-                        <input class="option__money-forms-input" type="number" name="numbers-min" id="numbers-min"
-                            placeholder="0">
+                <form class="price-catalog__option-money-forms" action="" method="get">
+                    <p class="price-catalog__option-money-block">
+                        <label class="price-catalog__option-money-label" for="numbers-min">От</label>
+                        <input class="price-catalog__option-money-input" type="number" name="numbers-min"
+                            id="numbers-min" placeholder="0">
                     </p>
-                    <p class="option__money-forms-block">
-                        <label class="option__money-forms-label" for="numbers-max">До</label>
-                        <input class="option__money-forms-input" type="number" name="numbers-max" id="numbers-max"
-                            placeholder="0">
+                    <p class="price-catalog__option-money-block">
+                        <label class="price-catalog__option-money-label" for="numbers-max">До</label>
+                        <input class="price-catalog__option-money-input" type="number" name="numbers-max"
+                            id="numbers-max" placeholder="0">
                     </p>
                 </form>
             </div>
-            <div class="price-catalog__sorting">
+            <div class="sorting">
                 <form class="sorting__forms" action="" method="get">
-                    <fieldset class="sorting__forms-radiobutton-block">
-                        <p class="sorting__forms-radiobutton-title">Сетка:</p>
-                        <p class="sorting__forms-radiobutton-button">
-                            <input class="sorting__forms-radiobutton-button-input" type="radio" id="adaptivity"
-                                name="radiobutton" value="adaptivity" checked />
-                            <label class="sorting__forms-radiobutton-button-label" for="adaptivity">Адаптивная</label>
+                    <fieldset class="sorting__fieldset">
+                        <legend class="sorting__title">Сетка:</legend>
+                        <p class="sorting__radiobutton">
+                            <input class="sorting__radiobutton-input" type="radio" id="adaptivity" name="radiobutton"
+                                value="adaptivity" checked />
+                            <label class="sorting__radiobutton-label" for="adaptivity">Адаптивная</label>
+                        </p>
+                        <p class="sorting__radiobutton">
+                            <input class="sorting__radiobutton-input" type="radio" id="fixed" name="radiobutton"
+                                value="fixed" />
+                            <label class="sorting__radiobutton-label" for="fixed">Фиксированная</label>
                         </p>
                         <p class="sorting__forms-radiobutton-button">
-                            <input class="sorting__forms-radiobutton-button-input" type="radio" id="fixed"
-                                name="radiobutton" value="fixed" />
-                            <label class="sorting__forms-radiobutton-button-label" for="fixed">Фиксированная</label>
-                        </p>
-                        <p class="sorting__forms-radiobutton-button">
-                            <input class="sorting__forms-radiobutton-button-input" type="radio" id="rubber"
-                                name="radiobutton" value="rubber" />
-                            <label class="sorting__forms-radiobutton-button-label" for="rubber">Резинновая</label>
+                            <input class="sorting__radiobutton-input" type="radio" id="rubber" name="radiobutton"
+                                value="rubber" />
+                            <label class="sorting__radiobutton-label" for="rubber">Резинновая</label>
                         </p>
                     </fieldset>
-                    <fieldset class="sorting__forms-checkbox-block">
-                        <p class="sorting__forms-checkbox-title">Особенности:</p>
-                        <p class="sorting__forms-checkbox-button">
-                            <input class="sorting__forms-checkbox-button-input" type="checkbox" id="slider"
-                                name="checkbox" value="slider" checked />
-                            <label class="sorting__forms-checkbox-button-label" for="slider">Слайдер</label>
+                    <fieldset class="sorting__checkbox">
+                        <legend class="sorting__checkbox-title">Особенности:</legend>
+                        <p class="sorting__checkbox-button">
+                            <input class="sorting__checkbox-input" type="checkbox" id="slider" name="checkbox"
+                                value="slider" checked />
+                            <label class="sorting__checkbox-label" for="slider">Слайдер</label>
                         </p>
-                        <p class="sorting__forms-checkbox-button">
-                            <input class="sorting__forms-checkbox-button-input" type="checkbox" id="block"
-                                name="checkbox" value="block" />
-                            <label class="sorting__forms-checkbox-button-label" for="block">Блок преимуществ</label>
+                        <p class="sorting__checkbox-button">
+                            <input class="sorting__checkbox-input" type="checkbox" id="block" name="checkbox"
+                                value="block" />
+                            <label class="sorting__checkbox-label" for="block">Блок преимуществ</label>
                         </p>
-                        <p class="sorting__forms-checkbox-button">
-                            <input class="sorting__forms-checkbox-button-input" type="checkbox" id="news"
-                                name="checkbox" value="news" checked />
-                            <label class="sorting__forms-checkbox-button-label" for="news">Новости</label>
+                        <p class="sorting__checkbox-button">
+                            <input class="sorting__checkbox-input" type="checkbox" id="news" name="checkbox"
+                                value="news" checked />
+                            <label class="sorting__checkbox-label" for="news">Новости</label>
                         </p>
-                        <p class="sorting__forms-checkbox-button">
-                            <input class="sorting__forms-checkbox-button-input" type="checkbox" id="gallery"
-                                name="checkbox" value="gallery" />
-                            <label class="sorting__forms-checkbox-button-label" for="gallery">Галерея</label>
+                        <p class="sorting__forms-checkbox">
+                            <input class="sorting__checkbox-input" type="checkbox" id="gallery" name="checkbox"
+                                value="gallery" />
+                            <label class="sorting__checkbox-label" for="gallery">Галерея</label>
                         </p>
-                        <p class="sorting__forms-checkbox-button">
-                            <input class="sorting__forms-checkbox-button-input" type="checkbox" id="basket"
-                                name="checkbox" value="basket" />
-                            <label class="sorting__forms-checkbox-button-label" for="basket">Корзина</label>
+                        <p class="sorting__checkbox-button">
+                            <input class="sorting__checkbox-input" type="checkbox" id="cart" name="checkbox"
+                                value="cart" />
+                            <label class="sorting__checkbox-label" for="cart">Корзина</label>
                         </p>
                     </fieldset>
                     <button class="sorting__button" id="sorting__submit-button" type="submit">Отправить</button>
@@ -104,99 +102,63 @@
 
             </div>
         </div>
-        <div class="price-catalog__cards">
-            <header class="cards__header">
+        <div class="cards">
+            <div class="cards__header">
                 <p class="cards__header-action">Сортировать:</p>
-                <ul class="cards__header-action-list">
-                    <li class="cards__header-action-list-item"><a class="cards__header-action-item-link" href="#">По
+                <ul class="cards__header-list">
+                    <li class="cards__list-item"><a class="cards__item-link" href="#">По
                             цене</a></li>
-                    <li class="cards__header-action-list-item"><a class="cards__header-action-item-link" href="#">По
+                    <li class="cards__list-item"><a class="cards__item-link" href="#">По
                             типу</a></li>
-                    <li class="cards__header-action-list-item"><a class="cards__header-action-item-link" href="#">По
+                    <li class="cards__list-item"><a class="cards__item-link" href="#">По
                             названию</a></li>
                 </ul>
                 <div class="cards__header-sorting">
-                    <button type="button" class="header-sorting__up-link"><span class="visually-hidden"></span></button>
-                    <button type="button" class="header-sorting__down-link"><span
-                            class="visually-hidden"></span></button>
+                    <button type="button" class="header-sorting__up"><span class="visually-hidden"></span></button>
+                    <button type="button" class="header-sorting__down"><span class="visually-hidden"></span></button>
                 </div>
-            </header>
+            </div>
             <ul class="price-catalog-list">
                 <li class="price-catalog-list__item">
                     <a class="price-catalog-list__item-link" href="#">
                         <div class="price-catalog-list__item-pagination"></div>
                         <img class="price-catalog-list__item-link-image" src="./image/placeholder.svg"
-                            alt="Шабло сайта." width="358px" height="578px">
+                            alt="Шаблон сайта." width="358px" height="578px">
                     </a>
                 </li>
                 <li class="price-catalog-list__item">
                     <a class="price-catalog-list__item-link" href="#">
-                        <div class="price-catalog-list__item-pagination">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                        </div>
+                        <div class="price-catalog-list__item-pagination"></div>
                         <img class="price-catalog-list__item-link-image" src="./image/placeholder.svg"
-                            alt="Шабло сайта." width="358px" height="578px">
+                            alt="Шаблон сайта." width="358px" height="578px">
                     </a>
                 </li>
                 <li class="price-catalog-list__item">
                     <a class="price-catalog-list__item-link" href="#">
-                        <div class="price-catalog-list__item-pagination">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                        </div>
+                        <div class="price-catalog-list__item-pagination"> </div>
                         <img class="price-catalog-list__item-link-image" src="./image/placeholder.svg"
-                            alt="Шабло сайта." width="358px" height="578px">
+                            alt="Шаблон сайта." width="358px" height="578px">
                     </a>
                 </li>
                 <li class="price-catalog-list__item">
                     <a class="price-catalog-list__item-link" href="#">
-                        <div class="price-catalog-list__item-pagination">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                        </div>
+                        <div class="price-catalog-list__item-pagination"> </div>
                         <img class="price-catalog-list__item-link-image" src="./image/placeholder.svg"
-                            alt="Шабло сайта." width="358px" height="578px">
+                            alt="Шаблон сайта." width="358px" height="578px">
                     </a>
                 </li>
                 <li class="price-catalog-list__item">
                     <a class="price-catalog-list__item-link" href="#">
-                        <div class="price-catalog-list__item-pagination">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                        </div>
+                        <div class="price-catalog-list__item-pagination"> </div>
                         <img class="price-catalog-list__item-link-image" src="./image/placeholder.svg"
-                            alt="Шабло сайта." width="358px" height="578px">
+                            alt="Шаблон сайта." width="358px" height="578px">
                     </a>
                 </li>
                 <li class="price-catalog-list__item">
                     <a class="price-catalog-list__item-link" href="#">
-                        <div class="price-catalog-list__item-pagination">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                            <img class="price-catalog-list__item-pagination" src="./image/placeholder.svg"
-                                alt="Белая точка." width="14px" height="14px">
-                        </div>
+                        <div class="price-catalog-list__item-pagination"> </div>
                         <img class="price-catalog-list__item-link-image" src="./image/placeholder.svg"
-                            alt="Шабло сайта." width="358px" height="578px">
+                            alt="Шаблон сайта." width="358px" height="578px">
                     </a>
                 </li>
             </ul>
