@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Catalog</title>
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="container">
+            <div class="header-main__wrapper">
+                <a class="header-main__logo-link" href="#"><img class="header-main__logo-image"
+                        src="./images/nerds-logo.png" alt="Логотип сайта." width="160px" height="65px"></a>
+                <nav class="header-main__navigation">
+                    <ul class="header-main__list">
+                        <li class="header-main__list-item page-located"><a class="header-main__list-link"
+                                href="#">Студия</a></li>
+                        <li class="header-main__list-item"><a class="header-main__list-link" href="#">Клиенты</a>
+                        </li>
+                        <li class="header-main__list-item"><a class="header-main__list-link" href="#">Магазин</a>
+                        </li>
+                        <li class="header-main__list-item"><a class="header-main__list-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="header-main__cart" href="#">Корзина</a>
+            </div>
+            <h1 class="header-main__title">Магазин готовых шаблонов</h1>
+        </div>
+    </header>
+    <main class="main">
+        <section class="price-catalog">
+            <h2 class="visually-hidden">Каталог товаров</h2>
+            <div class="container flex">
+                <div class="price-catalog__menu">
+                    <div class="price-catalog__option">
+                        <div class="price-catalog__option-money">
+                            <p class="price-catalog__option-money-title form-title">Стоимость:</p>
+                            <div class="price-catalog__option-money-range">
+                                <div class="price-catalog__option-money-range-area"></div>
+                            </div>
+                        </div>
+                        <form class="price-catalog__option-money-forms" action="" method="get">
+                            <p class="price-catalog__option-money-block">
+                                <label class="price-catalog__option-money-label" for="numbers-min">От</label>
+                                <input class="price-catalog__option-money-input" type="number" name="numbers-min"
+                                    id="numbers-min" placeholder="0">
+                            </p>
+                            <p class="price-catalog__option-money-block">
+                                <label class="price-catalog__option-money-label" for="numbers-max">До</label>
+                                <input class="price-catalog__option-money-input" type="number" name="numbers-max"
+                                    id="numbers-max" placeholder="0">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="sorting">
+                        <form class="sorting__forms" action="" method="get">
+                            <fieldset class="sorting__fieldset">
+                                <legend class="sorting__title form-title">Сетка:</legend>
+                                <p class="sorting__radiobutton">
+                                    <input class="sorting__radiobutton-input" type="radio" id="adaptivity"
+                                        name="radiobutton" value="adaptivity" checked />
+                                    <label class="sorting__radiobutton-label" for="adaptivity">Адаптивная</label>
+                                </p>
+                                <p class="sorting__radiobutton">
+                                    <input class="sorting__radiobutton-input" type="radio" id="fixed" name="radiobutton"
+                                        value="fixed" />
+                                    <label class="sorting__radiobutton-label" for="fixed">Фиксированная</label>
+                                </p>
+                                <p class="sorting__radiobutton">
+                                    <input class="sorting__radiobutton-input" type="radio" id="rubber"
+                                        name="radiobutton" value="rubber" />
+                                    <label class="sorting__radiobutton-label" for="rubber">Резинновая</label>
+                                </p>
+                            </fieldset>
+                            <fieldset class="sorting__checkbox">
+                                <legend class="sorting__checkbox-title form-title">Особенности:</legend>
+                                <p class="sorting__checkbox-button">
+                                    <input class="sorting__checkbox-input" type="checkbox" id="slider" name="checkbox"
+                                        value="slider" checked />
+                                    <label class="sorting__checkbox-label" for="slider">Слайдер</label>
+                                </p>
+                                <p class="sorting__checkbox-button">
+                                    <input class="sorting__checkbox-input" type="checkbox" id="block" name="checkbox"
+                                        value="block" />
+                                    <label class="sorting__checkbox-label" for="block">Блок преимуществ</label>
+                                </p>
+                                <p class="sorting__checkbox-button">
+                                    <input class="sorting__checkbox-input" type="checkbox" id="news" name="checkbox"
+                                        value="news" checked />
+                                    <label class="sorting__checkbox-label" for="news">Новости</label>
+                                </p>
+                                <p class="sorting__checkbox-button">
+                                    <input class="sorting__checkbox-input" type="checkbox" id="gallery" name="checkbox"
+                                        value="gallery" />
+                                    <label class="sorting__checkbox-label" for="gallery">Галерея</label>
+                                </p>
+                                <p class="sorting__checkbox-button">
+                                    <input class="sorting__checkbox-input" type="checkbox" id="cart" name="checkbox"
+                                        value="cart" />
+                                    <label class="sorting__checkbox-label" for="cart">Корзина</label>
+                                </p>
+                            </fieldset>
+                            <button class="sorting__button" id="sorting__submit-button" type="submit">Показать</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="cards__header">
+                        <p class="cards__header-action">Сортировать:</p>
+                        <ul class="cards__header-list">
+                            <li class="cards__list-item"><a class="cards__item-link active-cards-item" href="#">По
+                                    цене</a></li>
+                            <li class="cards__list-item"><a class="cards__item-link" href="#">По
+                                    типу</a></li>
+                            <li class="cards__list-item"><a class="cards__item-link" href="#">По
+                                    названию</a></li>
+                        </ul>
+                        <div class="cards__header-sorting">
+                            <button type="button" class="header-sorting__up"><span
+                                    class="visually-hidden"></span></button>
+                            <button type="button" class="header-sorting__down"><span
+                                    class="visually-hidden"></span></button>
+                        </div>
+                    </div>
+                    <ul class="price-catalog-list">
+                        <li class="price-catalog-list__item">
+                            <a class="price-catalog-list__item-link" href="#">
+                                <div class="price-catalog-list__item-pagination"></div>
+                                <img class="price-catalog-list__item-link-image" src="./images/catalog-price-1.jpg"
+                                    alt="Шаблон сайта." width="358px" height="578px">
+                            </a>
+                        </li>
+                        <li class="price-catalog-list__item">
+                            <a class="price-catalog-list__item-link" href="#">
+                                <div class="price-catalog-list__item-pagination"></div>
+                                <img class="price-catalog-list__item-link-image" src="./images/catalog-price-2.jpg"
+                                    alt="Шаблон сайта." width="358px" height="578px">
+                            </a>
+                        </li>
+                        <li class="price-catalog-list__item">
+                            <a class="price-catalog-list__item-link" href="#">
+                                <div class="price-catalog-list__item-pagination"> </div>
+                                <img class="price-catalog-list__item-link-image" src="./images/catalog-price-3.jpg"
+                                    alt="Шаблон сайта." width="358px" height="578px">
+                            </a>
+                        </li>
+                        <li class="price-catalog-list__item">
+                            <a class="price-catalog-list__item-link" href="#">
+                                <div class="price-catalog-list__item-pagination"> </div>
+                                <img class="price-catalog-list__item-link-image" src="./images/catalog-price-4.jpg"
+                                    alt="Шаблон сайта." width="358px" height="578px">
+                            </a>
+                        </li>
+                        <li class="price-catalog-list__item">
+                            <a class="price-catalog-list__item-link" href="#">
+                                <div class="price-catalog-list__item-pagination"> </div>
+                                <img class="price-catalog-list__item-link-image" src="./images/catalog-price-5.jpg"
+                                    alt="Шаблон сайта." width="358px" height="578px">
+                            </a>
+                        </li>
+                        <li class="price-catalog-list__item">
+                            <a class="price-catalog-list__item-link" href="#">
+                                <div class="price-catalog-list__item-pagination"> </div>
+                                <img class="price-catalog-list__item-link-image" src="./images/catalog-price-6.jpg"
+                                    alt="Шаблон сайта." width="358px" height="578px">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="price-catalog__pagination">
+                        <li class="price-catalog__pagination_item active-pagination">
+                            <a class="price-catalog__pagination_item-link" href="#">1</a>
+                        </li>
+                        <li class="price-catalog__pagination_item">
+                            <a class="price-catalog__pagination_item-link" href="#">2</a>
+                        </li>
+                        <li class="price-catalog__pagination_item">
+                            <a class="price-catalog__pagination_item-link" href="#">3</a>
+                        </li>
+                        <li class="price-catalog__pagination_item">
+                            <a class="price-catalog__pagination_item-link-next" href="#">Следующая</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="locations">
+            <h2 class="visually-hidden">Карта с местонахождением</h2>
+        </section>
+    </main>
+    <footer class="footer-main">
+        <div class="container flex-evenly">
+            <ul class="footer-main__social-list">
+                <li class="footer-main__social-list-item">
+                    <a href="#" class="footer-main__social-item-link">
+                        <img class="footer-main__social-item-image" src="./images/icons/footer-icon-1.svg"
+                            alt="Vkontakte." width="26px" height="15px">
+                    </a>
+                </li>
+                <li class="footer-main__social-list-item">
+                    <a href="#" class="footer-main__social-item-link">
+                        <img class="footer-main__social-item-image" src="./images/icons/footer-icon-2.svg"
+                            alt="Facebook." width="12px" height="22px">
+                    </a>
+                </li>
+                <li class="footer-main__social-list-item">
+                    <a href="#" class="footer-main__social-item-link">
+                        <img class="footer-main__social-item-image" src="./images/icons/footer-icon-3.svg"
+                            alt="Instagram" width="21px" height="21px">
+                    </a>
+                </li>
+            </ul>
+            <div class="text-box">
+                <p class="footer-main__title">Давайте дружить, это выгодно!</p>
+                <p class="footer-main__text">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
